@@ -1,0 +1,26 @@
+Name:                MapManyToOne
+Version:             0.0.1
+Cabal-Version:       >= 1.2
+Synopsis:            A bidirectional mapping of many keys to shared values
+Category:            data structures
+Description:
+
+  A bidirectional mapping of many keys to shared values.
+
+  Useful when you want a many-to-one relationship where you can lookup in either direction.
+
+Author:              Eyal Lotem
+Maintainer:          Eyal Lotem (eyal.lotem@gmail.com)
+Homepage:            http://github.com/Peaker/MapManyToOne/tree/master
+Copyright:           (c) 2010, Eyal Lotem
+License:             BSD4
+Stability:           experimental
+Build-Type:          Simple
+
+Library
+  hs-Source-Dirs:      src
+  Extensions:
+  Build-Depends:       base >= 4 && < 5, containers
+  Exposed-Modules:     Data.MapManyToOne
+  ghc-options:         -O2 -Wall
+--  ghc-prof-options:    -prof -auto-all 
